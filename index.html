@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="this is an ecommerce project for making aning anis express">
+  <title>Ecommerce Project</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+  integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+ <!-- navbar starts -->
+ <div class="toggle">
+    <i class="fa-solid fa-bars"  id="menu-icon"></i>
+</div>
+  <nav id="menu" class="hidden">
+    <ul class="nav-upper flex">
+      <li class="nav-list"><a href="#" class="nav-link">Home</a></li>
+      <li class="nav-list"><a href="#" class="nav-link">Register</a></li>
+      <li class="nav-list"><a href="./signin.html" class="nav-link">Sign In</a></li>
+      <li class="nav-list"><a href="./contact.html" class="nav-link">Contact</a></li>
+      <li class="nav-list"><a href="#" class="nav-link">
+        <img src="proflie1.jpg" class="profile-icon" alt="profile icon">
+      </a>
+    </li>
+    </ul>
+    <ul class="nav--lower flex">
+      <li class="nav-list"><a href="./mamun.html" class="nav-link nav-brand">Mamun Express</a></li>
+      <li class="nav-list"><a href="./card.html" class="nav-link">
+        <span><i class="fa-sharp-duotone fa-solid fa-cart-shopping"></i>  Cart 2 products -$124.40</span>
+      </a></li>
+    </ul>
+  </nav>
+ 
+  <!-- navbar end -->
+  <!-- header start here -->
+    <header>
+      
+     <div class="marquee-tag">
+      <marquee behavior="" direction=""> 50% Sales going on </marquee>
+     </div>
+      <div class=" banner flex ">
+        
+        <div class="feature flex">
+           <article class=" features ">
+             <i class="fa-solid fa-truck feature--icons"></i>
+             <p>Shipping within 7days</p> 
+
+           </article>
+           <article class=" features features1 ">
+            <i class="fa-brands fa-rocketchat feature--icons"></i>
+            <p>Support 24/7</p> 
+
+          </article>
+          <article class=" features ">
+            <i class="fa-regular fa-credit-card feature--icons"></i>
+            <p>Safe Payment</p> 
+
+          </article>
+        </div>
+      </div>
+    </header>
+    <!-- header end here -->
+    <!-- main section starts -->
+     <main>
+      <!-- sidebar -->
+      <div class="sidebar">
+        <section class="categories-section">
+          <h3 style="font-size: 25px; margin-bottom: 10px;">Categories</h3>
+          <ul class="lisr">
+            <li class="list-itms"><input type="checkbox" name="phone" id="phone" value="phone"><label for="phone">Phone</label></li>
+            <li class="list-itms"><input type="checkbox" name="tablets" id="tablets" value="tablets"><label for="tablets">Tablets</label></li>
+            <li class="list-itms"><input type="checkbox" name="telivisions" id="telivisions" value="telivisions"><label for="telivisions">Telivisions</label></li>
+            <li class="list-itms"><input type="checkbox" name="computers" id="computers" value="computers"><label for="computers">Computers</label></li>
+            <li class="list-itms"><input type="checkbox" name="headphone" id="headphone" value="headphone"><label for="headphone">Headphone</label></li>
+           
+          </ul>
+        </section>
+        <section class="price-section">
+          <h3 style="font-size: 25px; margin-bottom: 10px;">Price Racge</h3>
+          <ul class="lisr">
+            <li class="list-itms"><input type="radio" name="price1" id="price" value="[0,20]"><label for="price1">$0-$20</label></li>
+            <li class="list-itms"><input type="radio" name="price2" id="price" value="[0,20]"><label for="price2">Tablets</label></li>
+            <li class="list-itms"><input type="radio" name="price3" id="price" value="[0,20]"><label for="price3">Telivisions</label></li>
+            <li class="list-itms"><input type="radio" name="price4" id="price" value="[0,20]"><label for="price4">Computers</label></li>
+            <li class="list-itms"><input type="radio" name="price5" id="price" value="[0,20]"><label for="price5">Headphone</label></li>
+          </ul>
+        </section>
+        <section class="shipping-section">
+          <h3 style=" font-size: 23px; margin-bottom: 10px; ">Shipping Options</h3>
+          <ul class="lisr">
+            <li class="list-itms"><input type="radio" name="shipping" id="free" value="free"><label for="free">Free</label></li>
+            <li class="list-itms"><input type="radio" name="shipping" id="paid" value="paid"><label for="paid">Paid</label></li>
+            
+          </ul>
+        </section>
+      </div>
+     <!-- products -->
+      <div class="main-content"  >
+        <div class="action-content">
+            <div class="main1"><label for="sort by" style="font-size: 22px;">Sort by</label>
+                <select class="product-price" style="font-size: 18px;" name="sort" id="sort">
+                  <option value="sold">Most sold first</option>
+                  <option value="rating">Most rate first</option>
+                  <option value="price">Cheapest first</option>
+                  <option value="arrival">Newest first</option>
+                  <option value="discount">Biggest discount</option>
+                </select>
+              </div>
+          <div>
+            <input class="sort-input" type="text" placeholder="Search product">
+            <button class="btn-sort"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+        <!-- product section starts here -->
+         <section class="products">
+          <article class="product">
+            <div class="badge">
+              <span>5 in stoct</span>
+              <hr class="hr-design"/>
+              <span>3 sold</span>
+            </div>
+            <img src="headphone.jpg" alt="">
+            <div class="product--body">
+              <h3 class="product--name">sony v-4 Headphone</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+             <p class="product--description">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ab, mollitia consequatur iste ullam facere.<a href="#" class="link">Learn More</a>
+             </p>
+             <h4 class="product--price">$225.99</h4>
+             <h3 class="product--rating">Rating: 4.5/5</h3>
+             <button class="product--btn">Add To Cart</button>
+
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="badge">
+              <span>2 in stoct</span>
+              <hr class="hr-design"/>
+              <span>9 sold</span>
+            </div>
+            <img src="images.jpg" alt="">
+            <div class="product--body">
+              <h3 class="product--name">Apple smart watch</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+             <p class="product--description">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ab, mollitia consequatur iste ullam facere.<a href="#" class="link">Learn More</a>
+             </p>
+             <h4 class="product--price">$425.99</h4>
+             <h3 class="product--rating">Rating: 4.2/5</h3>
+             <button class="product--btn">Add To Cart</button>
+
+            </div>
+          </article>
+
+
+          <article class="product">
+            <div class="badge">
+              <span>3 in stoct</span>
+              <hr class="hr-design"/>
+              <span>12 sold</span>
+            </div>
+            <img src="im1.jpg" alt="">
+            <div class="product--body">
+              <h3 class="product--name"> smart glass </h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+             <p class="product--description">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ab, mollitia consequatur iste ullam facere.<a href="#" class="link">Learn More</a>
+             </p>
+             <h4 class="product--price">$325.99</h4>
+             <h3 class="product--rating">Rating: 3.5/5</h3>
+             <button class="product--btn">Add To Cart</button>
+
+            </div>
+          </article>
+
+
+
+          <article class="product">
+            <div class="badge">
+              <span>5 in stoct</span>
+              <hr class="hr-design"/>
+              <span>3 sold</span>
+            </div>
+            <img src="download.jpg" alt="">
+            <div class="product--body">
+              <h3 class="product--name">sony Tablets</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+             <p class="product--description">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ab, mollitia consequatur iste ullam facere.<a href="#" class="link">Learn More</a>
+             </p>
+             <h4 class="product--price">$225.99</h4>
+             <h3 class="product--rating">Rating: 4.5/5</h3>
+             <button class="product--btn">Add To Cart</button>
+
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="badge">
+              <span>2 in stoct</span> 
+              <hr class="hr-design"/>
+              <span>9 sold</span>
+            </div>
+            <img src="m1.jpg" alt="">
+            <div class="product--body">
+              <h3 class="product--name">Samaung smart Telivisions</h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+             <p class="product--description">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ab, mollitia consequatur iste ullam facere.<a href="#" class="link">Learn More</a>
+             </p>
+             <h4 class="product--price">$425.99</h4>
+             <h3 class="product--rating">Rating: 4.2/5</h3>
+             <button class="product--btn">Add To Cart</button>
+
+            </div>
+          </article>
+
+
+          <article class="product">
+            <div class="badge">
+              <span>3 in stoct</span>
+              <hr class="hr-design"/>
+              <span>12 sold</span>
+            </div>
+            <img src="mac.jpg" alt="">
+            <div class="product--body">
+              <h3 class="product--name">Mac Book </h3>
+              <p>
+                <span class="dot green"></span>
+                <span class="dot black"></span>
+                <span class="dot red"></span>
+              </p>
+             <p class="product--description">
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla ab, mollitia consequatur iste ullam facere.<a href="#" class="link">Learn More</a>
+             </p>
+             <h4 class="product--price">$325.99</h4>
+             <h3 class="product--rating">Rating: 3.5/5</h3>
+             <button class="product--btn">Add To Cart</button>
+
+            </div>
+          </article>
+          
+         </section>
+         <!-- product section end here -->
+      </div>
+     </main>
+    <!-- main section end -->
+    
+
+
+    
+   <!-- footer starts here -->
+    <footer class=" flex ">
+      <div>
+        <label for="subscribe">Subscribe to Newsletter: </label>
+        <input type="email" id="subscribe" name="subscribe" class="footer--input" placeholder="your email Address">
+        <button class="email-btn">subscribe</button>
+      </div>
+      <div>
+        <p>&copy; Copyright 2024 Mamun Express. All rights rserved</p>
+      </div>
+    </footer>
+   <!-- footer end here   -->
+   
+ 
+
+
+
+<script src="/index.js"></script>
+</body>
+</html>

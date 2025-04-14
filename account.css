@@ -1,0 +1,59 @@
+  body{
+    font-family: sans-serif;
+  }
+ .new-account{
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.account-confirm{
+  position: relative;
+}
+.fa-solid{
+    position: absolute;
+    top: 20px;
+    right: 0px;
+    color: lightgray;
+    font-size: 20px;
+    cursor: pointer;
+}
+.account input{
+    width: 350px;
+    height: 40px;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.account-birth{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.account-header{
+    color: green;
+}
+.account-header-text{
+    width: 350px;
+    margin: 10px 0px;
+    text-align: justify;
+}
+.account-btn button{
+    margin-top: 50px;
+    padding: 10px 30px;
+    background-color: green;
+    border-radius: 7px;
+    color: white;
+    font-size: 20px;
+    border: none;
+}
+.account-passwors{
+    position: relative;
+}
+#undide{
+ position: absolute;
+ top: 0px;
+ right: 0px;
+ color: lightgray;
+}
